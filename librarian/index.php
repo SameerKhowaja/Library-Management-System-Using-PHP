@@ -81,7 +81,7 @@ $(function(){
 			<div class="row">	
 			<div class="span12">
 					<div class="sti">
-						<img src="../LMS/title_img.jpg" class="img-rounded">
+						<img src="../images/title_img.jpg" class="img-rounded">
 					</div>
 				<div class="login">
 				<div class="log_txt">

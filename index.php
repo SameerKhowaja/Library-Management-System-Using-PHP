@@ -128,7 +128,7 @@
                 <div class="span12">
                     <div class="header">
                         <div class="pull-left">
-                            <img class="stilogo" src="LMS/title_img.jpg">
+                            <img class="stilogo" src="images/title_img.jpg">
                         </div>
                     </div>
 
@@ -137,10 +137,10 @@
                         <div class="pull-right">
                             <i class="icon-calendar icon-large"></i>
                             <?php
-					$Today = date('y:m:d');
-					$new = date('l, F d, Y', strtotime($Today));
-					echo $new;
-					?>
+                            $Today = date('y:m:d');
+                            $new = date('l, F d, Y', strtotime($Today));
+                            echo $new;
+                            ?>
                         </div>
                     </div>
 
@@ -203,51 +203,43 @@
                     <div style="overflow:hidden; width:960px; margin:0 auto; padding:0 20px;">
                         <div class="pix_diapo">
 
-                            <div data-thumb="LMS/EB1.jpg">
-                                <img src="LMS/EB1.jpg">
+                            <div data-thumb="images/img_play/1.jpg">
+                                <img src="images/img_play/1.jpg">
                             </div>
 
-                            <div data-thumb="LMS/EB2.jpg">
-                                <img src="LMS/EB2.jpg">
+                            <div data-thumb="images/img_play/2.jpg">
+                                <img src="images/img_play/2.jpg">
                             </div>
 
-                            <div data-thumb="LMS/EB3.jpg" data-time="7000">
-                                <img src="LMS/EB3.jpg">
+                            <div data-thumb="images/img_play/3.jpg" data-time="7000">
+                                <img src="images/img_play/3.jpg">
                             </div>
 
-                            <div data-thumb="LMS/EB4.jpg">
-                                <img src="LMS/EB4.jpg">
+                            <div data-thumb="images/img_play/4.jpg">
+                                <img src="images/img_play/4.jpg">
 
                             </div>
-                            <div data-thumb="LMS/EB5.jpg">
-                                <img src="LMS/EB5.jpg">
+                            <div data-thumb="images/img_play/5.jpg">
+                                <img src="images/img_play/5.jpg">
 
                             </div>
-                            <div data-thumb="LMS/EB6.jpg">
-                                <img src="LMS/EB6.jpg">
+                            <div data-thumb="images/img_play/6.jpg">
+                                <img src="images/img_play/6.jpg">
 
                             </div>
-                            <div data-thumb="LMS/EB7.jpg">
-                                <img src="LMS/EB7.jpg">
+                            <div data-thumb="images/img_play/7.jpg">
+                                <img src="images/img_play/7.jpg">
                             </div>
 
-                            <div data-thumb="LMS/EB8.jpg">
-                                <img src="LMS/EB8.jpg">
+                            <div data-thumb="images/img_play/8.jpg">
+                                <img src="images/img_play/8.jpg">
                             </div>
 
-                            <div data-thumb="LMS/EB9.jpg">
-                                <img src="LMS/EB9.jpg">
+                            <div data-thumb="images/img_play/9.jpg">
+                                <img src="images/img_play/9.jpg">
                             </div>
-                            <div data-thumb="LMS/EB10.jpg">
-                                <img src="LMS/EB10.jpg">
-                            </div>
-
-                            <div data-thumb="LMS/EB13.jpg">
-                                <img src="LMS/EB13.jpg">
-                            </div>
-
-                            <div data-thumb="LMS/EB14.jpg" data-time="7000">
-                                <img src="LMS/EB14.jpg">
+                            <div data-thumb="images/img_play/10.jpg">
+                                <img src="images/img_play/10.jpg">
                             </div>
 
                         </div>
@@ -270,25 +262,25 @@
                     <ul id="da-thumbs" class="da-thumbs">
                         <li>
                             <a href="">
-                                <img src="images/books1.jpg" />
+                                <img src="images/book1.jpg"  class="img-fluid" width="220px" height="180px"/>
                                 <div><span>Image 1</span></div>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="images/books2.jpg" />
+                                <img src="images/books2.jpg" class="img-fluid" width="220px" height="180px"/>
                                 <div><span>Image 2</span></div>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="images/book_bg.png" />
+                                <img src="images/book3.jpg" class="img-fluid" width="220px" height="180px"/>
                                 <div><span>Image 3</span></div>
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="images/4.jpg" />
+                                <img src="images/book4.jpg" class="img-fluid" width="220px" height="180px"/>
                                 <div><span>Image 4</span></div>
                             </a>
                         </li>

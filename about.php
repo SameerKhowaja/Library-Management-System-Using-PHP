@@ -130,7 +130,7 @@
             <div class="span12">
 	<div class="header">
 	<div class="pull-left">
-	<img class="stilogo" src="LMS/title_img.jpg">
+	<img class="stilogo" src="images/title_img.jpg">
 	</div>
 	</div>
 
