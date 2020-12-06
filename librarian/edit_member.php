@@ -162,11 +162,15 @@
                             <div class="control-group">
                                 <label class="control-label" for="inputPassword">Gender:</label>
                                 <div class="controls">
-                                    <input type="text" id="inputPassword" name="gender" value="<?php echo $row['gender']; ?>" placeholder="Gender" required>
+                                    <select name="gender" required>
+									<option><?php echo $row['gender']; ?></option>
+									<option>Male</option>
+									<option>Female</option>
+				                    </select>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label" for="inputPassword">Adddress:</label>
+                                <label class="control-label" for="inputPassword">Address:</label>
                                 <div class="controls">
                                     <input type="text" id="inputPassword" name="address" value="<?php echo $row['address']; ?>" placeholder="Address" required>
                                 </div>
@@ -174,22 +178,19 @@
                             <div class="control-group">
                                 <label class="control-label" for="inputPassword">Contact:</label>
                                 <div class="controls">
-                                    <input type='tel' pattern="[0-9]{11,11}" class="search" name="contact" placeholder="Phone Number" autocomplete="off" maxlength="11">
+                                    <input type='tel' pattern="[0-9]{11,11}" class="search" name="contact" placeholder="Phone Number" value="<?php echo $row['contact']; ?>" autocomplete="off" maxlength="11">
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="inputPassword">Type:</label>
                                 <div class="controls">
                                     <select name="type" required>
-			
-			
-	
-									
+
 									<option><?php echo $row['type']; ?></option>
 									<option>Student</option>
 									<option>Teacher</option>
 									
-				</select>
+				                    </select>
                                 </div>
                             </div>
 

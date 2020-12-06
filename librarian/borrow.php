@@ -148,7 +148,7 @@
                                     <select name="member_id" class="chzn-select" required/>
                                     <option></option>
                                     <?php 
-                                    $result =  mysqli_query($conn,"select * from member")or die(mysqli_error()); 
+                                    $result =  mysqli_query($conn,"select * from member where status = 'Active'")or die(mysqli_error()); 
 				                    while ($row=mysqli_fetch_array($result)){ 
                                     ?>
                                     <option value="<?php echo $row['member_id']; ?>">

@@ -208,9 +208,7 @@
 				<option><?php echo $row['status']; ?></option>
 				<option>New</option>
 				<option>Old</option>
-				<option>Lost</option>
 				<option>Damage</option>
-				<option>Subject for Replacement</option>
 			</select>
                                 </div>
                             </div>

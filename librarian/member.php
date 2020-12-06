@@ -213,7 +213,7 @@
 
                                         </div>
                                         <div class="modal-footer">
-                                            <a class="btn btn-danger" href="delete_student.php<?php echo '?id='.$id; ?>">Yes</a>
+                                            <a class="btn btn-danger" href="delete_member.php<?php echo '?id='.$id; ?>">Yes</a>
                                             <button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove icon-large"></i>&nbsp;Close</button>
                                         </div>
                                     </div>

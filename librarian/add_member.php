@@ -183,7 +183,6 @@
 									<option></option>
 									<option>Student</option>
 									<option>Teacher</option>
-									<option></option>
 									
 				</select>
                                 </div>
@@ -193,8 +192,6 @@
                                 <label class="control-label" for="inputPassword">Year Level:</label>
                                 <div class="controls">
                                     <select name="year_level">
-					
-
 									<option> </option>
 									<option>First Year</option>
 									<option>Second Year</option>
