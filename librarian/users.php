@@ -89,7 +89,7 @@
                         <li><a href="logout.php"><i class="icon-signout icon-large"></i>&nbsp;Logout</a></li>
                     </ul>
                     <div class="pull-right">
-                        <div class="admin">Welcome: Librarian</div>
+                        <div class="admin">Welcome: <?php echo $_SESSION['username_admin'] ?></div>
                     </div>
                 </div>
             </div>
