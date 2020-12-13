@@ -45,8 +45,8 @@ $(function(){
 	<script type="text/javascript" charset="utf-8" language="javascript" src="../js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" language="javascript" src="../js/DT_bootstrap.js"></script>
 	<script type='text/javascript' src='../scripts/jquery.easing.1.3.js'></script> 
-<script type='text/javascript' src='../scripts/jquery.hoverIntent.minified.js'></script> 
-<script type='text/javascript' src='../scripts/diapo.js'></script> 
+	<script type='text/javascript' src='../scripts/jquery.hoverIntent.minified.js'></script> 
+	<script type='text/javascript' src='../scripts/diapo.js'></script> 
 
 
 <!--sa calendar-->	
@@ -79,59 +79,60 @@ $(function(){
     <div class="container">
 		<div class="margin-top">
 			<div class="row">	
-			<div class="span12">
-					<div class="sti">
-						<img src="../images/title_img.jpg" class="img-rounded">
-					</div>
-				<div class="login">
-				<div class="log_txt">
-				<p><strong>Please Enter the Details Below..</strong></p>
-				</div>
-						<form class="form-horizontal" method="POST">
-								<div class="control-group">
-									<label class="control-label" for="inputEmail">Username</label>
-									<div class="controls">
-									<input type="text" name="username" id="username" placeholder="Username" required>
-									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label" for="inputPassword">Password</label>
-									<div class="controls">
-									<input type="password" name="password" id="password" placeholder="Password" required>
-								</div>
-								</div>
-								<div class="control-group">
-									<div class="controls">
-									<button id="login" name="submit" type="submit" class="btn"><i class="icon-signin icon-large"></i>&nbsp;Submit</button>
-								</div>
-								</div>
-								
-								<?php
-								if (isset($_POST['submit'])){
-								session_start();
-								$username = $_POST['username'];
-								$password = $_POST['password'];
-								$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-								
-								$result = mysqli_query($conn,$query)or die(mysqli_error());
-								$num_row = mysqli_num_rows($result);
-									$row=mysqli_fetch_array($result);
+				<div class="span12">
+						<div class="sti">
+							<img src="../images/title_img.jpg" class="img-rounded">
+						</div>
+					<div class="login">
+						<div class="log_txt">
+							<p><strong>Please Enter the Details Below..</strong></p>
+						</div>
+							<form class="form-horizontal" method="POST">
 									
-									$_SESSION['username_admin'] = $row['firstname']." ".$row['lastname'];
+									<div class="control-group">
+										<label class="control-label" for="inputEmail">Username</label>
+										<div class="controls">
+										<input type="text" name="username" id="username" placeholder="Username" required>
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label" for="inputPassword">Password</label>
+										<div class="controls">
+										<input type="password" name="password" id="password" placeholder="Password" required>
+										</div>
+									</div>
+									<div class="control-group">
+										<div class="controls">
+										<button id="login" name="submit" type="submit" class="btn"><i class="icon-signin icon-large"></i>&nbsp;Submit</button>
+										</div>
+									</div>
+									
+									<?php
+									if (isset($_POST['submit'])){
+									session_start();
+									$username = $_POST['username'];
+									$password = $_POST['password'];
+									$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+									
+									$result = mysqli_query($conn,$query)or die(mysqli_error());
+									$num_row = mysqli_num_rows($result);
+										$row=mysqli_fetch_array($result);
+										
+										$_SESSION['username_admin'] = $row['firstname']." ".$row['lastname'];
 
-									if( $num_row > 0 ) {
-										header('location:dashboard.php');
-								$_SESSION['id']=$row['user_id'];
-									}
-									else{ ?>
-								<div class="alert alert-danger">Access Denied</div>		
-								<?php
-								}}
-								?>
-						</form>
-				
-				</div>
-			</div>		
+										if( $num_row > 0 ) {
+											header('location:dashboard.php');
+											$_SESSION['id']=$row['firstname'];
+										}
+										else{ ?>
+									<div class="alert alert-danger">Access Denied</div>		
+									<?php
+									}}
+									?>
+							</form>
+					
+					</div>
+				</div>		
 			</div>
 		</div>
     </div>

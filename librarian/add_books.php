@@ -91,7 +91,7 @@
                         <li><a href="#logout" data-toggle="modal"><i class="icon-signout icon-large"></i>&nbsp;Logout</a></li>
                     </ul>
                     <div class="pull-right">
-                        <div class="admin">Welcome: Librarian</div>
+                        <div class="admin">Welcome: <?php echo $_SESSION['username_admin'] ?></div>
                     </div>
                 </div>
             </div>
@@ -152,14 +152,14 @@
                                 <label class="control-label" for="inputPassword">Category</label>
                                 <div class="controls">
                                     <select name="category_id">
-			<option></option>
-			<?php
-			$cat_query = mysqli_query($conn,"select * from category");
-			while($cat_row = mysqli_fetch_array($cat_query)){
-			?>
-			<option value="<?php echo $cat_row['category_id']; ?>"><?php echo $cat_row['classname']; ?></option>
-			<?php  } ?>
-			</select>
+                                    <option></option>
+                                    <?php
+                                    $cat_query = mysqli_query($conn,"select * from category");
+                                    while($cat_row = mysqli_fetch_array($cat_query)){
+                                    ?>
+                                    <option value="<?php echo $cat_row['category_id']; ?>"><?php echo $cat_row['classname']; ?></option>
+                                    <?php  } ?>
+                                    </select>
                                 </div>
                             </div>
 

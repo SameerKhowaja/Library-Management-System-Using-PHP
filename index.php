@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 
 <head>
@@ -20,6 +20,7 @@
     <script type="text/javascript" charset="utf-8" language="javascript" src="js/jquery.dataTables.js"></script>
     <script type="text/javascript" charset="utf-8" language="javascript" src="js/DT_bootstrap.js"></script>
 
+
     <script>
         jQuery(document).ready(function() {
             $(function() {
@@ -31,7 +32,7 @@
 			<style>
 				.da-thumbs li a div {
 					top: 0px;
-					left: -100%;
+                    left: -100%;
 					-webkit-transition: all 0.3s ease;
 					-moz-transition: all 0.3s ease-in-out;
 					-o-transition: all 0.3s ease-in-out;
@@ -92,6 +93,7 @@
             $('#select1').tooltip('hide')
         });
     </script>
+    
     <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
             <div class="container">
@@ -100,17 +102,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
+                
                 <div class="nav-collapse collapse">
                     <ul class="nav">
                         <li class="divider-vertical"></li>
-                        <li class=""><a rel="tooltip" data-placement="bottom" title="Home" id="home" href="index.php"><i class="icon-home icon-large"></i>&nbsp;Home</a> </li>
-                        <li class="divider-vertical"></li>
                         <li class="">
-                            <a rel="tooltip" data-placement="bottom" title="Click Here to About" id="login" href="about.php"><i class="icon-info-sign icon-large"></i>&nbsp;About US</a>
+                            <a rel="tooltip" data-placement="bottom" title="Home" id="home" href="index.php"><i class="icon-home icon-large"></i>&nbsp;Home</a> 
                         </li>
                         <li class="divider-vertical"></li>
                         <li class="">
-                            <a rel="tooltip" data-placement="bottom" title="Click Here to About" id="login" href="librarian/index.php"><i class="icon-user icon-large"></i>&nbsp;Admin Login</a>
+                            <a rel="tooltip" data-placement="bottom" title="About Us" id="login" href="about.php"><i class="icon-info-sign icon-large"></i>&nbsp;About US</a>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="">
+                            <a rel="tooltip" data-placement="bottom" title="Admin Login" id="login" href="librarian/index.php"><i class="icon-user icon-large"></i>&nbsp;Admin Login</a>
                         </li>
 
                         <li class="divider-vertical"></li>
