@@ -93,6 +93,12 @@
             $('#select1').tooltip('hide')
         });
     </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#book').tooltip('show')
+            $('#book').tooltip('hide')
+        });
+    </script>
     
     <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
@@ -112,6 +118,10 @@
                         <li class="divider-vertical"></li>
                         <li class="">
                             <a rel="tooltip" data-placement="bottom" title="About Us" id="login" href="about.php"><i class="icon-info-sign icon-large"></i>&nbsp;About US</a>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="">
+                            <a rel="tooltip" data-placement="bottom" title="View Books" id="book" href="view_book.php"><i class="icon-book icon-large"></i>&nbsp;View Books</a>
                         </li>
                         <li class="divider-vertical"></li>
                         <li class="">
@@ -261,8 +271,6 @@
 
                 </div>
                 <div class="span10">
-
-
 
                     <ul id="da-thumbs" class="da-thumbs">
                         <li>

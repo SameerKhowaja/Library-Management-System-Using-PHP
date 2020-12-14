@@ -8,8 +8,9 @@
 	$num_row = mysqli_num_rows($result);
 		$row=mysqli_fetch_array($result);
 		if( $num_row > 0 ) {
+			$_SESSION['username_admin'] = $row['firstname']." ".$row['lastname'];
+			$_SESSION['id']=$row['user_id'];
 			header('location:dashboard.php');
-	$_SESSION['id']=$row['user_id'];
 		}
 		else{ ?>
 	<div class="alert alert-danger">Access Denied</div>		

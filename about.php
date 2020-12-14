@@ -110,6 +110,10 @@
                         </li>
                         <li class="divider-vertical"></li>
                         <li class="">
+                            <a rel="tooltip" data-placement="bottom" title="View Books" id="book" href="view_book.php"><i class="icon-book icon-large"></i>&nbsp;View Books</a>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="">
                             <a rel="tooltip" data-placement="bottom" title="Click Here to About" id="login" href="librarian/index.php"><i class="icon-user icon-large"></i>&nbsp;Admin Login</a>
                         </li>
 

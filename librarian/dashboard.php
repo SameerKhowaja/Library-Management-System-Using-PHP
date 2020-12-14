@@ -133,6 +133,18 @@
             <div class="row">
                 <div class="span12">
 
+                    <div class="alert alert-info">
+                        <Strong>Welcome to Library Management System</strong>&nbsp;
+                        <div class="pull-right">
+                            <i class="icon-calendar icon-large"></i>
+                            <?php
+                            $Today = date('y:m:d');
+                            $new = date('l, F d, Y', strtotime($Today));
+                            echo $new;
+                            ?>
+                        </div>
+                    </div>
+
 
                     <div style="overflow:hidden; width:960px; margin:0 auto; padding:0 20px;">
                         <div class="pix_diapo">
@@ -179,10 +191,8 @@
                             </div>
 
                         </div>
-                        <!-- #pix_diapo -->
 
                     </div>
-
 
                     </section>
 
@@ -191,6 +201,14 @@
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="foot-margin">
+                <p><a>Library Management System Since November 5, 2020</a></p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
